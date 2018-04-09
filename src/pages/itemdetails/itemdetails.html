@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Item Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h3 text-center *ngIf="selectedItem">
+    {{selectedItem.name}}
+  </h3>
+  <h4 text-center *ngIf="selectedItem">
+    Born: {{selectedItem.birth_year}}
+    <br>
+    Hair: {{selectedItem.hair_color}}
+  </h4>
+</ion-content>

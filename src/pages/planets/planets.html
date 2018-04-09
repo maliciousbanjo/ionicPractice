@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Planets
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item *ngFor="let planet of planets">
+      <h2>{{planet.name}}</h2>
+      <p></p>
+    </ion-item>
+  </ion-list>
+</ion-content>

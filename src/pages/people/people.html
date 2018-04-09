@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>People</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <ion-list inset>
+        <button ion-item *ngFor="let person of people" (click)="itemTapped($event, person)">
+            <h2>{{person.name}}</h2>
+            <p></p>
+        </button>
+  </ion-list>
+</ion-content>
